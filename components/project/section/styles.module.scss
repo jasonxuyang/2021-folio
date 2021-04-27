@@ -1,0 +1,32 @@
+@import '../../../variables.scss';
+
+.section {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    width: $w10;
+    margin: $m192 $w1+$m24;
+    
+    h3 {
+        width: $w3;
+        margin-right: $m24;
+    }
+
+    .body {
+        margin-bottom: $m48;
+    }
+}
+
+@media only screen and (max-width: 480px) {
+    .section {
+        flex-direction: column;
+        width: $w4Mobile;
+        margin: $m32Mobile $m16Mobile;
+
+        h3 {
+            width: $w4Mobile;
+            margin-right: 0;
+            margin-bottom: $m12Mobile;
+        }
+    }
+}

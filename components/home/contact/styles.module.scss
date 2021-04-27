@@ -1,0 +1,70 @@
+@import '../../../variables.scss';
+
+.contact_container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: $wFull;
+}
+
+.contact_links {
+    display: flex;
+    flex-direction: column;
+    margin-left: $w1 + $m24;
+    margin-bottom: $m96;
+    
+    a {
+        font-size: $h3;
+        margin-bottom: $m16;
+        width: min-content;
+    }
+
+    a:hover  {
+        text-decoration: underline;
+    }
+}
+
+.bottom_note {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-bottom: $m32;
+    width: $w11;
+
+    a {
+        color: $gray;
+        display: inline;
+        text-decoration: underline;
+    }
+
+    a:hover {
+        color: $dark;
+    }
+}
+
+@media only screen and (max-width: 480px) {
+    .contact_container {
+        width: 100vw;
+    }
+
+    .contact_links {
+        a {
+            font-size: $h3Mobile;
+            margin-bottom: $m16Mobile;
+        }
+    }
+
+    .bottom_note {
+        flex-direction: column;
+        justify-content: flex-start;
+        margin-bottom: $m16Mobile;
+        width: $w4Mobile;
+        margin-left: $m16Mobile;
+
+        p:first-child {
+            padding-bottom: $m16Mobile;
+        }
+    }
+}
+

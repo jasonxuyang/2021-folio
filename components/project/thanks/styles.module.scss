@@ -1,0 +1,48 @@
+@import '../../../variables.scss';
+
+.bottom_note {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-bottom: $m32;
+    width: $w11;
+    margin-top: $m96;
+}
+
+.text {
+    a {
+        font-size: $h3;
+        color: $gray;
+        display: inline;
+        text-decoration: underline;
+    }
+
+    a:hover {
+        color: $dark;
+    }
+}
+
+@media only screen and (max-width: 480px) {
+    .bottom_note {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        margin: $m16Mobile $m16Mobile;
+        width: $w4Mobile;
+        margin-top: $m96;
+    }
+
+    .text {
+        a {
+            font-size: inherit;
+            color: $gray;
+            display: inline;
+            text-decoration: underline;
+        }
+    
+        a:hover {
+            color: $dark;
+        }
+    }
+}
+

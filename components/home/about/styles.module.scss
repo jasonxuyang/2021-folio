@@ -1,0 +1,58 @@
+@import '../../../variables.scss';
+
+.about_section {
+    margin-left: $w1 + $m24;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+}
+
+.about_content {
+    width: $w4;
+    margin-right: $w1 + $m24;
+
+    p {
+        margin-bottom: $m32;
+        color: $dark;
+    }
+
+    a {
+        display: inline;
+        text-decoration: underline;
+    }
+
+    a:hover {
+        color: $blue;
+    }
+}
+
+.about_img {
+    width: $w4;
+    height: auto;
+}
+
+@media only screen and (max-width: 480px) {
+    .about_section {
+        flex-direction: column-reverse;
+        margin-left: $m16Mobile;
+    }
+
+    .about_content {
+        margin-right: 0;
+        width: $w4Mobile;
+
+        p {
+            margin-bottom: $m16Mobile;
+        }
+
+        p:last-child {
+            margin-bottom: 0;
+        }
+    }
+
+    .about_img {
+        width: $w3Mobile;
+        height: auto;
+        margin-bottom: $m32Mobile;
+    }
+}

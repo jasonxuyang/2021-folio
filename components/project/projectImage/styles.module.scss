@@ -1,0 +1,37 @@
+@import '../../../variables.scss';
+
+.img_wrapper {
+    display: flex;
+    flex-direction: column;
+    width: $w10;
+    margin: $m144 0;
+}
+
+.img_project_left{
+    width: $w8;
+    height: auto;
+    margin-left: $w1 + (2*$m24);
+}
+
+.img_project_right{
+    width: $w8;
+    height: auto;
+    margin-left: $w3 + (2*$m24);
+}
+
+@media only screen and (max-width: 480px) {
+    .img_wrapper {
+        width: 100vw;
+        margin: $m32Mobile 0;
+    }
+    
+    .img_project_left{
+        width: $w4Mobile;
+        margin-left: $m16Mobile;
+    }
+    
+    .img_project_right{
+        width: $w4Mobile;
+        margin-left: $m16Mobile;
+    }
+}

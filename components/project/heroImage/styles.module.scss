@@ -1,0 +1,23 @@
+@import '../../../variables.scss';
+
+.img_hero{
+    width: $w10;
+    height: auto;
+}
+
+.img_wrapper {
+    width: $wFull;
+    padding: $m64 $w1+$m24;
+}
+
+@media only screen and (max-width: 480px) {
+    .img_hero{
+        width: $w4Mobile;
+        height: auto;
+    }
+    
+    .img_wrapper {
+        width: 100vw;
+        padding: $m32Mobile $m16Mobile;
+    }
+}

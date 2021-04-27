@@ -1,0 +1,33 @@
+@import '../../../variables.scss';
+
+.content {
+    display: flex;
+    flex-direction: column;
+    width: $w7;
+
+    p {
+        color: $dark;
+        margin-bottom: $m16;
+    }
+
+    p:last-child {
+        color: $gray;
+        margin-bottom: 0;
+    }
+}
+
+@media only screen and (max-width: 480px) {
+    .content {
+        width: $w4Mobile;
+    
+        p {
+            color: $dark;
+            margin-bottom: $m12Mobile;
+        }
+    
+        p:last-child {
+            color: $gray;
+            margin-bottom: 0;
+        }
+    }
+}

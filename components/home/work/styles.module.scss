@@ -1,0 +1,25 @@
+@import '../../../variables.scss';
+
+.work_section {
+    margin-left: $w1 + $m24;
+}
+
+.project_card {
+    margin-bottom: $m144;
+}
+
+.project_card:last-child {
+    margin-bottom: 0;
+}
+
+@media only screen and (max-width: 480px) {
+
+    .work_section {
+        width: 100vw;
+        margin-left: 0;
+    }
+
+    .project_card {
+        margin-bottom: $m48Mobile;
+    }
+}

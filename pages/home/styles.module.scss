@@ -1,0 +1,33 @@
+@import '../../variables.scss';
+
+.main {
+    margin-left: $mNav;
+    width: 83.611vw - (2 * $m24);
+    padding: 0 $m24;
+
+    h1 {
+        margin-bottom: $m48;
+    }
+
+    section {
+        margin-bottom: $m240;
+    }
+
+    section:last-child {
+        margin-bottom: 0;
+    }
+}
+
+@media only screen and (max-width: 480px) {
+
+    .main {
+        margin-left: 0;
+        width: 100vw;
+        padding: 0;
+
+        section {
+            margin-bottom: $m96Mobile;
+        }
+    }
+}
+

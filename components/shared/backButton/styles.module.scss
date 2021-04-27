@@ -1,0 +1,26 @@
+@import '../../../variables.scss';
+
+.button_container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-items: center;
+    width: max-content;
+
+    h3 {
+        display: inline;
+        margin-bottom: 0;
+        margin-left: $m12;
+        color: $dark;
+    }
+
+    img {
+        display: inline;
+        width: 1.8vw;
+        height: auto;
+    }
+}
+
+.button_container:hover {
+    text-decoration: underline;
+}

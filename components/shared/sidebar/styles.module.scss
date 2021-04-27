@@ -1,0 +1,58 @@
+@import '../../../variables.scss';
+
+.sidebar_container {
+    width: 16.389vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    position: fixed;
+    top: 0;
+    left: 0;
+}
+
+.top_content {
+    width: 14.722vw;
+    display: flex;
+    flex-direction: column;
+    margin-left: $m24;
+    margin-top: $m32;
+
+    h3 {
+        margin-bottom: $m16;
+        color: $dark;
+    }
+
+    h3:last-child {
+        margin-bottom: 0;
+    }
+}
+
+.bottom_links {
+    width: 14.722vw;
+    display: flex;
+    flex-direction: column;
+    margin-left: $m24;
+    margin-bottom: $m32;
+
+    a {
+        font-size: $h3;
+        margin-bottom: $m12;
+        color: $dark;
+        width: max-content;
+    }
+    
+    a:hover {
+        text-decoration: underline;
+    }
+
+    a:last-child {
+        margin-bottom: 0;
+    }
+}
+
+@media only screen and (max-width: 480px) {
+    .sidebar_container {
+        display: none;
+    }
+}
