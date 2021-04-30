@@ -16,7 +16,6 @@
 .img_thumbnail {
     width: $w8;
     height: auto;
-    margin-bottom: $m32;
 }
 
 .description_container {
@@ -29,6 +28,7 @@
     display: flex;
     flex-direction: row;
     margin-bottom: $m16;
+    margin-top: $m32;
 
     p {
         margin-right: $m16;
@@ -48,7 +48,6 @@
 
     .img_thumbnail {
         width: $w4Mobile;
-        margin-bottom: $m16Mobile;
     }
 
     .description_container {
@@ -56,6 +55,9 @@
     }
 
     .secondary_container {
+        margin-top: $m12Mobile;
+        margin-bottom: $m12Mobile;
+
         p {
             margin-right: $m16Mobile;
         }

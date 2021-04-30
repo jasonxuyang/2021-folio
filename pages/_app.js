@@ -1,10 +1,12 @@
-import '../globals.scss'
+import '../globals.scss';
 
 export default function App({ Component, pageProps }) {
-
+  
   return (
-    <>
-      <Component {...pageProps} />
-    </>
+    <div id="page_wrapper">
+      <Component 
+        {...pageProps} 
+      />
+    </div>
   )
 }

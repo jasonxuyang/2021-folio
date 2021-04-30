@@ -1,0 +1,38 @@
+@import '../../../variables.scss';
+
+.sidebar_container {
+    width: 100vw;
+    flex-direction: column;
+    display: none;
+    visibility: hidden;
+    margin-bottom: $m64Mobile;
+}
+
+.top_content {
+    display: flex;
+    flex-direction: column;
+
+    h2:first-child {
+        font-size: $h1Mobile;
+        font-family: bs;
+        color: $dark;
+        margin-left: 0;
+    }
+
+    h2 {
+        margin-bottom: $m16Mobile;
+        color: $dark;
+        margin-left: $m16Mobile;
+    }
+
+    h2:last-child {
+        margin-bottom: 0;
+    }
+}
+
+@media only screen and (max-width: 480px) {
+    .sidebar_container {
+        display: block;
+        visibility: visible;
+    }
+}

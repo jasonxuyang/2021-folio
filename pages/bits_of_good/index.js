@@ -7,6 +7,7 @@ import Paragraph from '../../components/project/paragraph';
 import ProjectImage from '../../components/project/projectImage';
 import Thanks from '../../components/project/thanks';
 import Section from '../../components/project/section';
+import React, { useEffect } from 'react';
 
 function Project() {
     const team = (
@@ -27,6 +28,48 @@ function Project() {
             </div>
         </div>
     )
+
+    const pageWrapper = React.useRef(null);
+    let scrollY = 0;
+    let wrapperY = 0;
+    let body;
+
+    React.useEffect(() => {
+        pageWrapper.current.style.position = 'fixed';
+        pageWrapper.current.style.top = 0;
+        pageWrapper.current.style.left = 0;
+        console.log(pageWrapper.current.clientHeight);
+        body = document.body;
+        window.addEventListener('scroll', scroll);
+        window.requestAnimationFrame(render);
+        
+        return function cleanup() {
+            window.cancelAnimationFrame(render);
+            window.removeEventListener('scroll', scroll);
+            console.log("Cleaned up.");
+        }
+    });
+
+    function lerp(a, b, n) {
+        return (1 - n) * a + n * b;
+    }
+
+    function scroll() {
+        scrollY = window.pageYOffset;
+    }
+
+    function render() {
+        try {
+            body.style.height = pageWrapper.current.clientHeight + 'px';
+            wrapperY = lerp(wrapperY, scrollY, 0.07);
+            wrapperY = Math.floor(wrapperY * 100) / 100;
+            pageWrapper.current.style.transform = `translate(0px, -${wrapperY}px)`;
+            window.requestAnimationFrame(render);
+        } catch (error) {
+            console.log("Failed to cleanup before next animation frame render.\n" + error);
+        }
+    }
+
     return (
         <> 
             <Sidebar 
@@ -40,7 +83,8 @@ function Project() {
                     'Team'
                 ]}
             />
-            <div className={styles.main}>
+
+            <div className={styles.main} ref={pageWrapper}>
                 <h1>Bits of Good</h1>
                 <div className={styles.img}>
                     <HeroImage imgUrl = 'asset/imgs/gen_soln-1.jpg'/>
@@ -99,6 +143,10 @@ function Project() {
                         imgUrl = 'asset/imgs/gen_soln-6.jpg'
                         side = 'right'
                     />
+                    <ProjectImage 
+                        imgUrl = 'asset/imgs/gen_soln-7.jpg'
+                        side = 'left'
+                    />
                 </div>
 
                 <div className={styles.img}>
@@ -114,7 +162,7 @@ function Project() {
                 <div className={styles.thanks}>
                     <Thanks 
                         text = {<h3 className={styles.thanks_note}>You can learn more about Bits of Good <a href='https://bitsofgood.org/'>here.</a></h3>}
-                        url = '/home'
+                        url = '../home'
                     />
                 </div>
             </div>
