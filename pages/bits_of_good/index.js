@@ -9,16 +9,16 @@ import Thanks from '../../components/project/thanks';
 import Section from '../../components/project/section';
 import React, { useEffect } from 'react';
 import Head from 'next/head';
+import Button from '../../components/shared/button'
 
 function Project() {
     const team = (
         <div className={styles.team_info}>
             <div className={styles.team_info_item}>
-                <p>Product Designers</p>
+                <p>Design and Research</p>
                 <p>Yuhan Zhou</p>
+                <p>Huan Deng</p>
                 <p>Chaebin Park</p>
-                <p>Yangyi Xu</p>
-                <p>Jun Yamada</p>
             </div>
 
             <div className={styles.team_info_item}>
@@ -199,7 +199,7 @@ function Project() {
                         />
                     </section>
                     <div className={styles.img}>
-                        <HeroImage imgUrl = 'asset/imgs/gen_soln-4.jpg'/>
+                        <HeroImage imgUrl = 'asset/imgs/gen_soln-problem.jpg'/>
                     </div>
                     <section id = 'Solution' ref={solution}>
                         <Paragraph 
@@ -252,7 +252,11 @@ function Project() {
                     <div className={styles.thanks}>
                         <Thanks 
                             text = {<h3 className={styles.thanks_note}>You can learn more about Bits of Good <a href='https://bitsofgood.org/'>here.</a></h3>}
-                            url = '../home'
+                            action = {<div onClick={transitionOut}><Button 
+                                        text = 'Next Project'
+                                        downArrow = 'false'
+                                        url = '../hackgt'
+                                    /></div>}
                         />
                     </div>
                 </div>

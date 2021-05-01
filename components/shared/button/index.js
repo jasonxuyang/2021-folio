@@ -1,4 +1,4 @@
-import Link from 'next/link'
+import CustomLink from '../customLink'
 import styles from './styles.module.scss';
 
 function BackButton({
@@ -9,12 +9,14 @@ function BackButton({
     const imgSrc = 'asset/button-arrow.svg';
 
     return (
-        <Link href={url}>
-            <a className={styles.button_container}>
-                <h3>{text}</h3>
-                <img src={imgSrc} alt=''/>
-            </a>
-        </Link>
+        <CustomLink 
+            children = {<a className={styles.button_container}>
+                            <h3>{text}</h3>
+                            <img src={imgSrc} alt=''/>
+                        </a>}
+            href = {url}
+        />
+        
     )
 }
 

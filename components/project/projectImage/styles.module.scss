@@ -10,13 +10,13 @@
 .img_project_left{
     width: $w8;
     height: auto;
-    margin-left: $w1 + (2*$m24);
+    margin-left: $w1 + $m24;
 }
 
 .img_project_right{
     width: $w8;
     height: auto;
-    margin-left: $w3 + (2*$m24);
+    margin-left: $w3 + $m24;
 }
 
 @media only screen and (max-width: 480px) {

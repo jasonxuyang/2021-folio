@@ -9,23 +9,19 @@ import Thanks from '../../components/project/thanks';
 import Section from '../../components/project/section';
 import React, { useEffect } from 'react';
 import Head from 'next/head';
+import Button from '../../components/shared/button'
 
 function Project() {
     const team = (
         <div className={styles.team_info}>
             <div className={styles.team_info_item}>
-                <p>Product Designers</p>
-                <p>Yuhan Zhou</p>
-                <p>Chaebin Park</p>
-                <p>Yangyi Xu</p>
-                <p>Jun Yamada</p>
+                <p>Product Designer</p>
+                <p>Kimberly Do</p>
             </div>
 
             <div className={styles.team_info_item}>
-                <p>Engineering Leads</p>
-                <p>Prabhav Chawla</p>
-                <p>Kris Satya</p>
-                <p>Rithik Gavvala</p>
+                <p>Engineering Lead</p>
+                <p>Nick Grana</p>
             </div>
         </div>
     )
@@ -175,73 +171,56 @@ function Project() {
                 />
 
                 <div className={styles.main} ref={main}>
-                    <h1>Bits of Good</h1>
+                    <h1>HackGT</h1>
                     <div className={styles.img}>
-                        <HeroImage imgUrl = 'asset/imgs/gen_soln-1.jpg'/>
+                        <HeroImage imgUrl = 'asset/imgs/appgt-1.jpg'/>
                     </div>
                     <section id = 'Overview' ref={overview}>
                         <Overview 
-                            head = 'Helping small-scale non-profits grow their support base.'
-                            body = 'Bits of Good is a non-profit student organization that connects non-profits with students passionate about social good to develop software.'
-                            client = 'Bits of Good'
+                            head = 'Building a scheduler app for hackathon participants.'
+                            body = 'HackGT is a non-profit student organization that throws large-scale hackathons to spread the opportunity for innovation to high school and college students.'
+                            client = 'HackGT'
                             role = 'Product / Visual'
                         />
                     </section>
                     <div className={styles.img}>
-                        <HeroImage imgUrl = 'asset/imgs/gen_soln-hero.jpg'/>
+                        <HeroImage imgUrl = 'asset/imgs/appgt-hero.jpg'/>
                     </div>
                     <section id = 'Problem' ref={problem}>
                         <Paragraph 
                             id = 'Problem'
                             head = "Problem"
-                            subhead = "Small non-profits feel that the lack of large enterprise tools was hindering their growth."
-                            body = "Our research showed that at a small scale, the tools didn't limit a non-profit's ability to scale. It was the inability to find and connect with the people that care about their cause."
+                            subhead = "Each hackathon has hundreds of different types of events with no great way to organize the information."
+                            body = "Participants felt they lacked information about workshop level and speaker topics. Additionally, many of them missed events just because they weren't aware of them."
                         />
                     </section>
                     <div className={styles.img}>
-                        <HeroImage imgUrl = 'asset/imgs/gen_soln-4.jpg'/>
+                        <HeroImage imgUrl = 'asset/imgs/appgt-problem.jpg'/>
                     </div>
                     <section id = 'Solution' ref={solution}>
                         <Paragraph 
                             id = 'Solution'
                             head = "Solution"
-                            subhead = "A growth platform that connects non-profits with donors and volunteers."
-                            body = "We believe that by creating a space where people can find and support local causes, non-profits will be able to connect with a base of supporters to support their growth. "
+                            subhead = "A scheduling app that gives participants more information about the events they want to go to."
+                            body = "Participants can now gather more information about each event, save events to receive push notifications, as well as more easily search and filter events by types and tags."
                         />
                     </section>
                     <div className={styles.img_section}>
-                        <ProjectImage 
-                            imgUrl = 'asset/imgs/gen_soln-3.jpg'
-                            side = 'left'
-                        />
-                        <ProjectImage 
-                            imgUrl = 'asset/imgs/gen_soln-2.jpg'
-                            side = 'right'
-                        />
+                        <div className={styles.img}>
+                            <HeroImage imgUrl = 'asset/imgs/appgt-3.png'/>
+                        </div>
                     </div>
                 
                     <div className={styles.img}>
-                        <HeroImage imgUrl = 'asset/imgs/gen_soln-4.jpg'/>
+                        <HeroImage imgUrl = 'asset/imgs/appgt-2.jpg'/>
                     </div>
 
                     <div className={styles.img_section}>
-                        <ProjectImage 
-                            imgUrl = 'asset/imgs/gen_soln-5.jpg'
-                            side = 'left'
-                        />
-                        <ProjectImage 
-                            imgUrl = 'asset/imgs/gen_soln-6.jpg'
-                            side = 'right'
-                        />
-                        <ProjectImage 
-                            imgUrl = 'asset/imgs/gen_soln-7.jpg'
-                            side = 'left'
-                        />
+                        <div className={styles.img}>
+                            <HeroImage imgUrl = 'asset/imgs/appgt-4.png'/>
+                        </div>
                     </div>
 
-                    <div className={styles.img}>
-                        <HeroImage imgUrl = 'asset/imgs/gen_soln-8.jpg'/>
-                    </div>
                     <section id="Team" ref={teammates}>
                         <Section 
                             head = "Team"
@@ -251,8 +230,12 @@ function Project() {
 
                     <div className={styles.thanks}>
                         <Thanks 
-                            text = {<h3 className={styles.thanks_note}>You can learn more about Bits of Good <a href='https://bitsofgood.org/'>here.</a></h3>}
-                            url = '../home'
+                            text = {<h3 className={styles.thanks_note}>You can learn more about HackGT <a href='https://hexlabs.org/'>here.</a></h3>}
+                            action = {<div onClick={transitionOut}><Button 
+                                        text = 'Next Project'
+                                        downArrow = 'false'
+                                        url = '../bits_of_good'
+                                    /></div>}
                         />
                     </div>
                 </div>

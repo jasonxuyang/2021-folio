@@ -1,11 +1,9 @@
 import styles from './styles.module.scss';
-import Link from 'next/link';
-import Button from '../../shared/button'
 
 
 function Thanks({
     text,
-    url
+    action
 }) {
     return(
         <>
@@ -13,11 +11,7 @@ function Thanks({
                 <div className={styles.text}>
                     {text}
                 </div>
-                <Button 
-                    text = 'Next Project'
-                    downArrow = 'false'
-                    url = {url}
-                />
+                {action}
             </div>
         </>
     )

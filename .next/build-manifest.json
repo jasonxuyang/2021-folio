@@ -29,10 +29,20 @@
       "static/chunks/webpack.js",
       "static/chunks/pages/bits_of_good.js"
     ],
+    "/hackgt": [
+      "static/chunks/main.js",
+      "static/chunks/webpack.js",
+      "static/chunks/pages/hackgt.js"
+    ],
     "/home": [
       "static/chunks/main.js",
       "static/chunks/webpack.js",
       "static/chunks/pages/home.js"
+    ],
+    "/next/dist/pages/_error": [
+      "static/chunks/main.js",
+      "static/chunks/webpack.js",
+      "static/chunks/pages/next/dist/pages/_error.js"
     ]
   },
   "ampFirstPages": []
