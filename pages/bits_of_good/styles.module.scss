@@ -81,14 +81,11 @@
         display: none;
     }
 
-    .transition_overlay {
-        display: none;
-    }
-
     .main {
         margin-left: 0;
         width: 100vw;
         padding: 0 0;
+        position: absolute;
     }
 
     .img_section {
