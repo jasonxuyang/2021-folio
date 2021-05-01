@@ -1,0 +1,129 @@
+@import '../../variables.scss';
+
+#page_wrapper {
+    opacity: 0;
+    transition: all 0.8s linear;
+}
+
+.transition_overlay {
+    background-color: #000000;
+    width: 100vw;
+    height: 100vh;
+    transition: height 0.8s cubic-bezier(0.76, 0, 0.24, 1);
+    position: fixed;
+}
+
+.progress_bar {
+    width: 5px;
+    background-color: #ffffff;
+}
+
+.progress_bar_wrapper {
+    position: fixed;
+    left: 0px;
+    top: 0px;
+    bottom: 0px;
+    width: 5px;
+    background-image: linear-gradient(360deg, #FBDA61 0%, #FF5ACD 100%);
+}
+
+.main {
+    margin-left: $mNav;
+    width: 83.611vw - (2 * $m24);
+    padding: 0 $m24;
+}
+
+.img_section {
+    padding: $m32 0;
+    margin: $m48 0;
+    background-color: $light;
+    width: $wFull
+}
+
+.team_info {
+    display: flex;
+    flex-direction: row;
+
+    .team_info_item {
+        display: flex;
+        flex-direction: column;
+        margin-right: $m24;
+        width: $w3;
+
+        p:first-child {
+            color: $dark;
+            margin-bottom: $m6;
+        }
+
+        p {
+            margin-bottom: $m6;
+        }
+    }
+
+    .project_info_item:last-child {
+        margin-right: 0;
+    }
+}
+
+.thanks {
+
+    .thanks_note {
+        color: $gray;
+
+        a {
+            font-size: $h3;
+        }
+    }
+}
+
+@media only screen and (max-width: 480px) {
+    .progress_bar_wrapper {
+        display: none;
+    }
+
+    .main {
+        margin-left: 0;
+        width: 100vw;
+        padding: 0 0;
+    }
+
+    .img_section {
+        padding: $m16Mobile 0;
+        margin: $m16Mobile 0;
+        background-color: $light;
+        width: 100vw;
+    }
+
+    .team_info {
+        .team_info_item {
+            display: flex;
+            flex-direction: column;
+            margin-right: $m16Mobile;
+            width: $w2Mobile;
+    
+            p:first-child {
+                color: $dark;
+                margin-bottom: $m12Mobile;
+            }
+    
+            p {
+                margin-bottom: $m12Mobile;
+            }
+        }
+    
+        .project_info_item:last-child {
+            margin-right: 0;
+        }
+    }
+
+    .thanks {
+        .thanks_note {
+            color: $gray;
+            margin-bottom: $m12Mobile;
+    
+            a {
+                font-size: $h3Mobile;
+            }
+        }
+    }
+}

@@ -24,7 +24,7 @@ function ProjectCard({
     return(
         <div className={useClass}>
             <CustomLink 
-                children = {<img className={styles.img_thumbnail} src={imgUrl} alt=''/>}
+                children = {<div className={styles.img_wrapper}><img className={styles.img_thumbnail} src={imgUrl} alt=''/></div>}
                 href = {url}
             />
             <div className={styles.description_container}>

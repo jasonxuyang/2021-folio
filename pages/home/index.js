@@ -123,7 +123,6 @@ function Home() {
                 <meta property="og:url" content="jasonxuyang.com"/>
                 <meta property="og:title" content="Jason Yang - Product Designer"/>
                 <meta property="og:description" content="Jason Yang is a designer who codes. He's currently learning how to build cool things at Georgia Tech."/>
-                <meta property="og:image" content="asset/og-image.jpg"/>
                 <link rel="icon" type="image/png" sizes="32x32" href="asset/favicon-32x32.png"/>
                 <link rel="icon" type="image/png" sizes="16x16" href="asset/favicon-16x16.png"/>
             </Head>
@@ -168,14 +167,14 @@ function Home() {
                                     url = '/bits_of_good'
                                 />
                             </div>
-                            <div className={styles.project_card}>
+                            <div className={styles.project_card} onClick={transitionOut}>
                                 <ProjectCard
                                     imgUrl = 'asset/imgs/cover_hackgt.jpg'
                                     title = "HackGT - Building a useful event scheduler for our hackathon participants."
                                     workType = 'Product Design'
                                     workFor = 'Student Org'
                                     side = 'right'
-                                    url = '/project'
+                                    url = '/hackgt'
                                 />
                             </div>
                         </div>

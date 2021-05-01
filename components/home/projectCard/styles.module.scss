@@ -13,8 +13,24 @@
     margin-left: $w2 + $m24;
 }
 
-.img_thumbnail {
+.img_wrapper {
+    position: relative;
     width: $w8;
+    height: 26.389vw;
+}
+
+.img_thumbnail {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: $w8;
+    height: auto;
+    transition: all .8s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.img_thumbnail:hover {
+    width: $w7;
     height: auto;
 }
 
