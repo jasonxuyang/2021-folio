@@ -28,6 +28,11 @@
       "static/chunks/main.js",
       "static/chunks/webpack.js",
       "static/chunks/pages/bits_of_good.js"
+    ],
+    "/home": [
+      "static/chunks/main.js",
+      "static/chunks/webpack.js",
+      "static/chunks/pages/home.js"
     ]
   },
   "ampFirstPages": []

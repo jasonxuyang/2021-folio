@@ -8,6 +8,7 @@ import ProjectImage from '../../components/project/projectImage';
 import Thanks from '../../components/project/thanks';
 import Section from '../../components/project/section';
 import React, { useEffect } from 'react';
+import Head from 'next/head';
 
 function Project() {
     const team = (
@@ -137,7 +138,24 @@ function Project() {
     }
 
     return (
-        <> 
+        <>  
+            <Head>
+                <meta charset="utf-8"/>
+                <title>Jason Yang - Design and Code</title>
+                <link rel="canonical" href="https://jasonxuyang.com"/>
+                <meta name="description" content="Jason Yang is a designer who codes. He's currently learning how to build cool things @GT."/>
+                <meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=5"/>
+                <meta name="format-detection" content="telephone=no"/>
+                <meta property="og:url" content="jasonxuyang.com"/>
+                <meta property="og:title" content="Jason Yang - Product Designer"/>
+                <meta property="og:description" content="Jason Yang is a designer who codes. He's currently learning how to build cool things @GT."/>
+                <meta property="og:image" content=""/>
+                <meta property="og:image:width" content="1200"/>
+                <meta property="og:image:height" content="630"/>
+                <link rel="icon" type="image/png" sizes="32x32" href="asset/favicon-32x32.png"/>
+                <link rel="icon" type="image/png" sizes="16x16" href="asset/favicon-16x16.png"/>
+            </Head>
+
             <div id={styles.page_wrapper} ref={pageWrapper}>
                 <div className={styles.progress_bar_wrapper}>
                     <div className={styles.progress_bar} ref={progressBar}></div>

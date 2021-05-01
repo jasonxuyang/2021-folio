@@ -10,7 +10,7 @@ function Contact() {
                     <div className={styles.contact_links}>
                         <a href='https://www.linkedin.com/in/jasonxuyang/'>Linkedin</a>
                         <a href='https://github.com/jasonxuyang'>Github</a>
-                        <a href='https://dribbble.com/jasonxuyang'>Resume</a>
+                        <a href='https://drive.google.com/file/d/1m9e6sE4LVjWqlnHCP-6hWR_l-7ZiRn52/view?usp=sharing'>Resume</a>
                     </div>
                 </div>
                 <div className={styles.bottom_note}>
