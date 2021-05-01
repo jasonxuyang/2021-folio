@@ -179,9 +179,7 @@ function Project() {
 
                 <div className={styles.main} ref={main}>
                     <h1>Bits of Good</h1>
-                    <div className={styles.img}>
-                        <HeroImage imgUrl = 'asset/imgs/gen_soln-1.jpg'/>
-                    </div>
+                    <HeroImage imgUrl = 'asset/imgs/gen_soln-1.jpg'/>
                     <section id = 'Overview' ref={overview}>
                         <Overview 
                             head = 'Helping small-scale non-profits grow their support base.'
@@ -190,9 +188,7 @@ function Project() {
                             role = 'Product / Visual'
                         />
                     </section>
-                    <div className={styles.img}>
-                        <HeroImage imgUrl = 'asset/imgs/gen_soln-hero.jpg'/>
-                    </div>
+                    <HeroImage imgUrl = 'asset/imgs/gen_soln-hero.jpg'/>
                     <section id = 'Problem' ref={problem}>
                         <Paragraph 
                             id = 'Problem'
