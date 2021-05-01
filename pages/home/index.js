@@ -117,15 +117,13 @@ function Home() {
                 <meta charset="utf-8"/>
                 <title>Jason Yang - Design and Code</title>
                 <link rel="canonical" href="https://jasonxuyang.com"/>
-                <meta name="description" content="Jason Yang is a designer who codes. He's currently learning how to build cool things @GT."/>
+                <meta name="description" content="Jason Yang is a designer who codes. He's currently learning how to build cool things at Georgia Tech."/>
                 <meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=5"/>
                 <meta name="format-detection" content="telephone=no"/>
                 <meta property="og:url" content="jasonxuyang.com"/>
                 <meta property="og:title" content="Jason Yang - Product Designer"/>
-                <meta property="og:description" content="Jason Yang is a designer who codes. He's currently learning how to build cool things @GT."/>
-                <meta property="og:image" content=""/>
-                <meta property="og:image:width" content="1200"/>
-                <meta property="og:image:height" content="630"/>
+                <meta property="og:description" content="Jason Yang is a designer who codes. He's currently learning how to build cool things at Georgia Tech."/>
+                <meta property="og:image" content="asset/og-image.jpg"/>
                 <link rel="icon" type="image/png" sizes="32x32" href="asset/favicon-32x32.png"/>
                 <link rel="icon" type="image/png" sizes="16x16" href="asset/favicon-16x16.png"/>
             </Head>
