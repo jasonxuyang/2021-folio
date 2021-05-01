@@ -1,5 +1,6 @@
 import ProjectCard from '../projectCard';
 import styles from './styles.module.scss';
+import Home from '../../../pages/home';
 
 
 function Work() {

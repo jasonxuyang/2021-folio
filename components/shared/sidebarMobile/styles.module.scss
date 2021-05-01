@@ -6,18 +6,13 @@
     display: none;
     visibility: hidden;
     margin-bottom: $m64Mobile;
+    margin-top: $m32Mobile;
 }
 
 .top_content {
     display: flex;
     flex-direction: column;
-
-    h2:first-child {
-        font-size: $h1Mobile;
-        font-family: bs;
-        color: $dark;
-        margin-left: 0;
-    }
+    width: $w4Mobile;
 
     h2 {
         margin-bottom: $m16Mobile;

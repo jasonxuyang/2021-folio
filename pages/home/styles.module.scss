@@ -1,10 +1,22 @@
 @import '../../variables.scss';
 
+#page_wrapper {
+    opacity: 0;
+    transition: all 0.8s linear;
+}
+
+.transition_overlay {
+    background-color: #000000;
+    width: 100vw;
+    height: 100vh;
+    transition: height 0.8s cubic-bezier(0.76, 0, 0.24, 1);
+    position: fixed;
+}
+
 .progress_bar {
     width: 5px;
     background-color: #ffffff;
 }
-
 
 .progress_bar_wrapper {
     position: fixed;
@@ -31,9 +43,26 @@
     section:last-child {
         margin-bottom: 0;
     }
+
+    .work_section {
+        margin-left: $w1 + $m24;
+    }
+    
+    .project_card {
+        margin-bottom: $m144;
+    }
+    
+    .project_card:last-child {
+        margin-bottom: 0;
+    }
 }
 
+
 @media only screen and (max-width: 480px) {
+
+    .progress_bar_wrapper {
+        display: none;
+    }
 
     .main {
         margin-left: 0;
@@ -42,6 +71,15 @@
 
         section {
             margin-bottom: $m96Mobile;
+        }
+
+        .work_section {
+            width: 100vw;
+            margin-left: 0;
+        }
+    
+        .project_card {
+            margin-bottom: $m48Mobile;
         }
     }
 }

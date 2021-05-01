@@ -4,7 +4,7 @@
     display: flex;
     flex-direction: column;
     width: $w10;
-    margin: $m192 $w1+$m24;
+    padding: $m192 $w1+$m24;
 
     h3 {
         margin-bottom: $m24;
@@ -44,7 +44,7 @@
 @media only screen and (max-width: 480px) {
     .overview_section {
         width: $w4Mobile;
-        margin: $m32Mobile $m16Mobile;
+        padding: $m32Mobile $m16Mobile;
     
         h3 {
             margin-bottom: $m16Mobile;

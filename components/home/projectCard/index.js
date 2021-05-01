@@ -1,5 +1,5 @@
 import styles from './styles.module.scss';
-import Link from 'next/link';
+import CustomLink from '../../shared/customLink';
 
 function ProjectCard({
     imgUrl,
@@ -8,8 +8,8 @@ function ProjectCard({
     workFor,
     side,
     url,
+    effect
 }) {
-
     // Based on "side" prop - will assign the class
     const leftClass = styles.component_container_left;
     const rightClass = styles.component_container_right;
@@ -23,11 +23,10 @@ function ProjectCard({
 
     return(
         <div className={useClass}>
-            <Link href={url}>
-                <a>
-                    <img className={styles.img_thumbnail} src={imgUrl} alt=''/>
-                </a>
-            </Link>
+            <CustomLink 
+                children = {<img className={styles.img_thumbnail} src={imgUrl} alt=''/>}
+                href = {url}
+            />
             <div className={styles.description_container}>
                 <div className={styles.secondary_container}>
                     <p>{workType}</p>
