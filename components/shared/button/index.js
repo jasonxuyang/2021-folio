@@ -10,10 +10,10 @@ function BackButton({
 
     return (
         <CustomLink 
-            children = {<a className={styles.button_container}>
+            children = {<div className={styles.button_container}>
                             <h3>{text}</h3>
                             <img src={imgSrc} alt=''/>
-                        </a>}
+                        </div>}
             href = {url}
         />
         

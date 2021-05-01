@@ -34,16 +34,19 @@ function Home() {
         setTimeout(function(){
             transitionIn()
         }, 400);
-        main.current.style.position = 'fixed';
-        main.current.style.top = 0;
-        main.current.style.left = 0;
-        progressBar.current.style.position = 'fixed';
-        progressBar.current.style.bottom = 0;
-        progressBar.current.style.left = 0;
-        body = document.body;
-        page = document.documentElement;
-        window.addEventListener('scroll', scroll);
-        window.requestAnimationFrame(render);
+        const mediaQuery = window.matchMedia('(min-width: 480px)');
+        if (mediaQuery.matches) {
+            main.current.style.position = 'fixed';
+            main.current.style.top = 0;
+            main.current.style.left = 0;
+            progressBar.current.style.position = 'fixed';
+            progressBar.current.style.bottom = 0;
+            progressBar.current.style.left = 0;
+            body = document.body;
+            page = document.documentElement;
+            window.addEventListener('scroll', scroll);
+            window.requestAnimationFrame(render);
+        }
     }
 
     function cleanupPage() {
