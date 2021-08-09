@@ -179,7 +179,7 @@ function Project() {
 
                 <div className={styles.main} ref={main}>
                     <h1>Bits of Good</h1>
-                    <HeroImage imgUrl = 'asset/imgs/gen_soln-1.jpg'/>
+                    <HeroImage imgUrl = 'asset/imgs/gen_soln-1.jpg' alt = 'Landing page for the Bits of Good platform. Features a hero banner of volunteers, a search feature to discover non-profits, and upcoming volunteer events.'/>
                     <section id = 'Overview' ref={overview}>
                         <Overview 
                             head = 'Helping small-scale non-profits grow their support base.'
@@ -188,7 +188,7 @@ function Project() {
                             role = 'Product / Visual'
                         />
                     </section>
-                    <HeroImage imgUrl = 'asset/imgs/gen_soln-hero.jpg'/>
+                    <HeroImage imgUrl = 'asset/imgs/gen_soln-hero.jpg' alt = 'Two men working together to lift boxes.'/>
                     <section id = 'Problem' ref={problem}>
                         <Paragraph 
                             id = 'Problem'
@@ -198,7 +198,7 @@ function Project() {
                         />
                     </section>
                     <div className={styles.img}>
-                        <HeroImage imgUrl = 'asset/imgs/gen_soln-problem.jpg'/>
+                        <HeroImage imgUrl = 'asset/imgs/gen_soln-problem.jpg' alt = 'Overview of the design system used for this product. Shows highlight of color, type, grid, and object style system.'/>
                     </div>
                     <section id = 'Solution' ref={solution}>
                         <Paragraph 
@@ -212,34 +212,39 @@ function Project() {
                         <ProjectImage 
                             imgUrl = 'asset/imgs/gen_soln-3.jpg'
                             side = 'left'
+                            alt = 'UI for the volunteer event description page. Shows the date, event name, location, and general event information.'
                         />
                         <ProjectImage 
                             imgUrl = 'asset/imgs/gen_soln-2.jpg'
                             side = 'right'
+                            alt = 'UI for the volunteer events page. Shows a grid of event cards that give basic info about the event.'
                         />
                     </div>
                 
                     <div className={styles.img}>
-                        <HeroImage imgUrl = 'asset/imgs/gen_soln-4.jpg'/>
+                        <HeroImage imgUrl = 'asset/imgs/gen_soln-4.jpg' alt='Sign up screen for the platform.'/>
                     </div>
 
                     <div className={styles.img_section}>
                         <ProjectImage 
                             imgUrl = 'asset/imgs/gen_soln-5.jpg'
                             side = 'left'
+                            alt = 'Landing screen for the Non-profits page. Shows popular non-profits and the ability to filter non-profits by impact cause.'
                         />
                         <ProjectImage 
                             imgUrl = 'asset/imgs/gen_soln-6.jpg'
                             side = 'right'
+                            alt = 'Search results page for searching for a non-profit. Shows ability to filter by popular, closest to you, and most supporters.'
                         />
                         <ProjectImage 
                             imgUrl = 'asset/imgs/gen_soln-7.jpg'
                             side = 'left'
+                            alt = 'UI for the Non-profit profile page. Gives high level information about the non-profit.'
                         />
                     </div>
 
                     <div className={styles.img}>
-                        <HeroImage imgUrl = 'asset/imgs/gen_soln-8.jpg'/>
+                        <HeroImage imgUrl = 'asset/imgs/gen_soln-8.jpg' alt = 'A section of the landing page that highlights Bits of Good, the student organization.'/>
                     </div>
                     <section id="Team" ref={teammates}>
                         <Section 

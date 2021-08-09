@@ -8,7 +8,8 @@ function ProjectCard({
     workFor,
     side,
     url,
-    effect
+    effect,
+    alt
 }) {
     // Based on "side" prop - will assign the class
     const leftClass = styles.component_container_left;
@@ -24,7 +25,7 @@ function ProjectCard({
     return(
         <div className={useClass}>
             <CustomLink 
-                children = {<div className={styles.img_wrapper}><img className={styles.img_thumbnail} src={imgUrl} alt=''/></div>}
+                children = {<div className={styles.img_wrapper}><img className={styles.img_thumbnail} src={imgUrl} alt={alt}/></div>}
                 href = {url}
             />
             <div className={styles.description_container}>

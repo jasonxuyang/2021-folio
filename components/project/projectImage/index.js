@@ -2,7 +2,8 @@ import styles from './styles.module.scss';
 
 function ProjectImage({
     imgUrl,
-    side
+    side,
+    alt
 }) {
     let useClass;
     const left = styles.img_project_left;
@@ -15,7 +16,7 @@ function ProjectImage({
     }
     return(
         <div className={styles.img_wrapper}>
-            <img className={useClass} src={imgUrl} alt=''/>
+            <img className={useClass} src={imgUrl} alt={alt}/>
         </div>
     )
 }

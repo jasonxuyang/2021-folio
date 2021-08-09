@@ -168,6 +168,7 @@ function Home() {
                                     workFor = 'Student Org'
                                     side = 'left'
                                     url = '/bits_of_good'
+                                    alt = 'Bits of Good'
                                 />
                             </div>
                             <div className={styles.project_card} onClick={transitionOut}>
@@ -178,6 +179,7 @@ function Home() {
                                     workFor = 'Student Org'
                                     side = 'right'
                                     url = '/hackgt'
+                                    alt = 'HackGT'
                                 />
                             </div>
                         </div>

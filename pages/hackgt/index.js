@@ -176,7 +176,7 @@ function Project() {
                 <div className={styles.main} ref={main}>
                     <h1>HackGT</h1>
                     <div className={styles.img}>
-                        <HeroImage imgUrl = 'asset/imgs/appgt-1.jpg'/>
+                        <HeroImage imgUrl = 'asset/imgs/appgt-1.jpg' alt = 'Hero shot of the HackGT scheduling app. Shows the schedule screen, with events that are currently happening now.'/>
                     </div>
                     <section id = 'Overview' ref={overview}>
                         <Overview 
@@ -187,7 +187,7 @@ function Project() {
                         />
                     </section>
                     <div className={styles.img}>
-                        <HeroImage imgUrl = 'asset/imgs/appgt-hero.jpg'/>
+                        <HeroImage imgUrl = 'asset/imgs/appgt-hero.jpg' alt = 'A picture of 4 participants at BuildGT, one of the hackathons that HackGT throws every Spring.'/>
                     </div>
                     <section id = 'Problem' ref={problem}>
                         <Paragraph 
@@ -198,7 +198,7 @@ function Project() {
                         />
                     </section>
                     <div className={styles.img}>
-                        <HeroImage imgUrl = 'asset/imgs/appgt-problem.jpg'/>
+                        <HeroImage imgUrl = 'asset/imgs/appgt-problem.jpg' alt='A summary of the problem that our hackathon participants faced - lacking clear information about our workshops and events.'/>
                     </div>
                     <section id = 'Solution' ref={solution}>
                         <Paragraph 
@@ -210,17 +210,17 @@ function Project() {
                     </section>
                     <div className={styles.img_section}>
                         <div className={styles.img}>
-                            <HeroImage imgUrl = 'asset/imgs/appgt-3.png'/>
+                            <HeroImage imgUrl = 'asset/imgs/appgt-3.png' alt = 'Detail shots of search and filter by event category.'/>
                         </div>
                     </div>
                 
                     <div className={styles.img}>
-                        <HeroImage imgUrl = 'asset/imgs/appgt-2.jpg'/>
+                        <HeroImage imgUrl = 'asset/imgs/appgt-2.jpg' alt = 'Shot of the loading screen and login screen side by side'/>
                     </div>
 
                     <div className={styles.img_section}>
                         <div className={styles.img}>
-                            <HeroImage imgUrl = 'asset/imgs/appgt-4.png'/>
+                            <HeroImage imgUrl = 'asset/imgs/appgt-4.png' alt = 'Detail shot of the event schedule screen and event description screen'/>
                         </div>
                     </div>
 
