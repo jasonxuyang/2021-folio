@@ -1,1 +1,0 @@
-{"ast":null,"code":"import Home from './home';\nexport default Home;","map":{"version":3,"sources":["/Users/home/2021-folio/pages/index.js"],"names":["Home"],"mappings":"AAAA,OAAOA,IAAP,MAAiB,QAAjB;AAEA,eAAeA,IAAf","sourcesContent":["import Home from './home';\n\nexport default Home;"]},"metadata":{},"sourceType":"module"}
